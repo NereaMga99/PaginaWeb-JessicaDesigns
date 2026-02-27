@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda | Jessica Designs</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo-title">
+            <a href="index.html">
+                <img src="imagenes/logo/logo.png" alt="Logo de Jessica Designs" class="logo" />
+            </a>
+        </div>
+
+        <button class="hamburger">☰</button>
+
+        <nav class="nav-menu" aria-label="Menú principal" id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link">Tienda</a></li>
+                <li><a href="quienSoy.html" class="nav-link">Quién soy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="layout">
+    <!-- Menú lateral -->
+    <aside id="menu-productos" class="reveal" aria-label="Filtrar por productos">
+        <h2>Categorías</h2>
+            <ul>
+                <li><a href="#" class="btn-filtro active" data-filtro="todas">Todos los productos</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="tazas">Tazas Personalizadas</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="camisetas">Camisetas</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="sudaderas">Sudaderas</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="pegatinas">Pegatinas</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="llaveros">Llaveros</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="neceseres/bolsas">Neceseres/bolsas</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="tarjetasNFC">Tarjetas NFC</a></li>
+                <li><a href="#" class="btn-filtro" data-filtro="venta-por-mayor">Venta al por mayor</a></li>
+            </ul>
+    </aside>
+
+    <main class="tienda-main">
+        <section class="catalogo">
+            <h2 style="text-align: center; margin-bottom: 6rem;">Todos los productos</h2>
+
+            <section class="info-envios">
+                <h2>Información sobre envíos e impuestos</h2>
+                <p>
+                    Para pedidos enviados a países de la Unión Europea con un valor de hasta
+                    <strong>150 €</strong>, utilizo el sistema <strong>IOSS (Import One-Stop Shop)</strong>.
+                </p>
+
+                <ul>
+                    <li>El IVA está incluido en el precio final del pedido</li>
+                    <li>No tendrás que pagar impuestos adicionales al recibir tu compra, es como comprar en España o en cualquier parte de la Unión Europea.</li>
+                </ul>
+
+                <p>
+                    En pedidos superiores a <strong>150 €</strong>, el IVA de importación y los
+                    posibles aranceles deberán abonarse al transportista en el momento de la entrega.
+                </p>
+            </section>
+            
+            <div class="grid-productos">
+                <div class="card-producto" data-categoria="tazas">
+                    <img src="imagenes/productos/tazaAngryBird.jpg" alt="Taza con nombre" />
+                    <div class="info-producto">
+                        <h4>Taza Blanca Personalizable</h4>
+                        <p class="precio">10,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-personalizadas-disenos-unicos-para-cada-ocasion" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="tazas">
+                    <img src="imagenes/productos/tazaVerde.png" alt="Taza con nombre" />
+                    <div class="info-producto">
+                        <h4>Taza verde Personalizable</h4>
+                        <p class="precio">11,95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-personalizadas?variant=56412109767042" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="tazas">
+                    <img src="imagenes/productos/tazaNegra.png" alt="Taza con nombre" />
+                    <div class="info-producto">
+                        <h4>Taza negra Personalizable</h4>
+                        <p class="precio">11,95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-personalizadas?variant=56412109832578" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="tazas">
+                    <img src="imagenes/productos/tazaRosa.png" alt="Taza con nombre" />
+                    <div class="info-producto">
+                        <h4>Taza rosa Personalizable</h4>
+                        <p class="precio">11,95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-personalizadas?variant=56412109799810" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="tazas">
+                    <img src="imagenes/productos/tazaRoja.png" alt="Taza con nombre" />
+                    <div class="info-producto">
+                        <h4>Taza roja Personalizable</h4>
+                        <p class="precio">11,95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-personalizadas?variant=56412109865346" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+                
+                <div class="card-producto" data-categoria="camisetas">
+                    <img src="imagenes/productos/camisetaBasica.png" alt="Camiseta logo" />
+                    <div class="info-producto">
+                        <h4>Camiseta Blanca Personalizable</h4>
+                        <p class="precio">9,99€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/sudadera-personalizada" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="camisetas">
+                    <img src="imagenes/productos/camisetaRoja.png" alt="Camiseta roja" />
+                    <div class="info-producto">
+                        <h4>Camiseta Roja Personalizable</h4>
+                        <p class="precio">9,99€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/camisetas-personalizadas?variant=56409539314050" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="camisetas">
+                    <img src="imagenes/productos/camisetaNegra.png" alt="Camiseta negra" />
+                    <div class="info-producto">
+                        <h4>Camiseta Negra Personalizable</h4>
+                        <p class="precio">9,99€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/camisetas-personalizadas?variant=56409539248514" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="camisetas">
+                    <img src="imagenes/productos/camisetaAzul.png" alt="Camiseta azul" />
+                    <div class="info-producto">
+                        <h4>Camiseta Azul Personalizable</h4>
+                        <p class="precio">9,99€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/camisetas-personalizadas?variant=56409539346818" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="camisetas">
+                    <img src="imagenes/productos/camisetaRosa.png" alt="Camiseta rosa" />
+                    <div class="info-producto">
+                        <h4>Camiseta Rosa Personalizable</h4>
+                        <p class="precio">9,99€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/camisetas-personalizadas?variant=56409539281282" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="sudaderas">
+                    <img src="imagenes/productos/sudaderaBasica.png" alt="Sudadera personalizada" />
+                    <div class="info-producto">
+                        <h4>Sudadera Personalizada</h4>
+                        <p class="precio">22,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/sudadera-personalizada" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="llaveros">
+                    <img src="imagenes/productos/LlaveroPersonalizado.png" alt="Llavero de metacrilato" />
+                    <div class="info-producto">
+                        <h4>Llavero Personalizado</h4>
+                        <p class="precio">7,95 €</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/llaveros-personalizados" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="neceseres/bolsas">
+                    <img src="imagenes/productos/neceserPersonalizado.png" alt="Neceser personalizado" />
+                    <div class="info-producto">
+                        <h4>Necesér de tela Personalizable</h4>
+                        <p class="precio">6,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/bolsa-personalizada" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="neceseres/bolsas">
+                    <img src="imagenes/productos/BolsaPersonalizable.png" alt="Bolsa personalizable" />
+                    <div class="info-producto">
+                        <h4>Bolsa de tela Personalizable</h4>
+                        <p class="precio">9.95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/bolsa-personalizada-1" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="neceseres/bolsas">
+                    <img src="imagenes/productos/bolsaPoliester.png" alt="Bolsa personalizable" />
+                    <div class="info-producto">
+                        <h4>Bolsa de poliéster Personalizable</h4>
+                        <p class="precio">9,95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/bolsa-personalizable" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="tarjetasNFC">
+                    <img src="imagenes/productos/tarjetaPersonalizada1.png" alt="Tarjeta NFC personalizada" />
+                    <div class="info-producto">
+                        <h4>Tarjeta NFC personalizada (1 tarjeta)</h4>
+                        <p class="precio">8,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/sudadera-personalizada" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="tarjetasNFC">
+                    <img src="imagenes/productos/tarjetaPersonalizada10.png" alt="Tarjeta NFC personalizada" />
+                    <div class="info-producto">
+                        <h4>Tarjeta personalizada (paquete de 10 tarjetas)</h4>
+                        <p class="precio">40,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/sudadera-personalizada" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="tarjetasNFC">
+                    <img src="imagenes/productos/tarjetaNFC50.png" alt="Tarjeta NFC personalizada" />
+                    <div class="info-producto">
+                        <h4>Tarjeta NFC personalizada (50 tarjetas)</h4>
+                        <p class="precio">150,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/sudadera-personalizada" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="venta-por-mayor">
+                    <img src="imagenes/productos/pack10.png" alt="pack 10 unidades Tazas sublimadas" />
+                    <div class="info-producto">
+                        <h4>Tazas sublimadas Logo (10 unidades)</h4>
+                        <p class="precio">48,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/products/tazas-sublimadas-10-unidades" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="venta-por-mayor">
+                    <img src="imagenes/productos/pack10.png" alt="pack 20 unidades Tazas sublimadas" />
+                    <div class="info-producto">
+                        <h4>Tazas sublimadas Logo (20 unidades)</h4>
+                        <p class="precio">86,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-sublimadas-20-unidades" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="venta-por-mayor">
+                    <img src="imagenes/productos/tazaColor10.png" alt="pack 10 unidades Tazas sublimadas" />
+                    <div class="info-producto">
+                        <h4>Tazas sublimadas Full color toda la taza (10 unidades)</h4>
+                        <p class="precio">55,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-sublimadas-full-color-toda-la-taza-10-unidades" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="venta-por-mayor">
+                    <img src="imagenes/productos/tazaColor10.png" alt="pack 10 unidades Tazas sublimadas" />
+                    <div class="info-producto">
+                        <h4>Tazas sublimadas Full color toda la taza (20 unidades)</h4>
+                        <p class="precio">100,00€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-sublimadas-full-color-toda-la-taza-20-unidades" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="pegatinas">
+                    <img src="imagenes/productos/pegatinas50.png" alt="pegatinas redondas 50 unidades" />
+                    <div class="info-producto">
+                        <h4>Pegatinas redondas (50 unidades)</h4>
+                        <p class="precio">12,95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/pegatinas-redondas" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card-producto" data-categoria="pegatinas">
+                    <img src="imagenes/productos/pegatinas50.png" alt="pegatinas redondas 100 unidades" />
+                    <div class="info-producto">
+                        <h4>Pegatinas redondas (100 unidades)</h4>
+                        <p class="precio">20,95€</p>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/pegatinas-redondas-100unidades" class="btn btn-secondary" target="_blank">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</section>
+    
+    <div class="social-icons">
+        <a href="https://www.instagram.com/jesica.medium" target="_blank" aria-label="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+        </a>
+        <a href="https://wa.me/34674029411" target="_blank" aria-label="WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025, <a href="index.html">Jessica Designs</a></p>
+            <ul class="footer-menu">
+                <li><a href="politicaPrivacidad.html">Política de privacidad</a></li>
+                <li><a href="avisoLegal.html">Aviso legal</a></li>
+                <li><a href="cookies.html">Política de Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="aviso-envio" class="aviso-envio">
+        <button class="cerrar-aviso">×</button>
+        <h4>🎁 Envío GRATIS</h4>
+        <p>En compras superiores a <strong>60€</strong></p>
+    </div>
+</body>
+</html>
