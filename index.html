@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Jessica Designs | Productos Personalizados</title>
     <link rel="icon" href="favicon.ico" type="image/ico">
+</head>
 <body>
 
     <header>
@@ -23,11 +24,17 @@
 
         <nav class="nav-menu" aria-label="Menú principal" id="nav-menu">
             <ul>
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                <li><a href="quienSoy.html" class="nav-link">Quién soy</a></li>
+                <li><a href="index.html" class="nav-link translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link translate" data-es="Tienda" data-en="Shop">Tienda</a></li>
+                <li><a href="quienSoy.html" class="nav-link translate" data-es="Quién soy" data-en="About me">Quién soy</a></li>
             </ul>
         </nav>
+
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')" id="btn-es" style="font-weight: bold;">ES</button>
+            <span>|</span>
+            <button onclick="changeLanguage('en')" id="btn-en">EN</button>
+        </div>
     </header>
 
     <main>
@@ -35,64 +42,64 @@
             <img src="imagenes/hero/hero.png" alt="Fondo de productos personalizados" class="hero-img" />
             <div class="overlay">
                 <div class="hero-content">
-                    <h1>Dale vida a tus ideas</h1>
-                    <p>Tazas, camisetas, sudaderas, llaveros únicos y mucho más, creados especialmente para ti.</p>
-                    <a href="tienda.html" class="hover:animate-jelly">Ver la tienda</a>
+                    <h1 class="translate" data-es="Dale vida a tus ideas" data-en="Bring your ideas to life">Dale vida a tus ideas</h1>
+                    <p class="translate" data-es="Tazas, camisetas, sudaderas, llaveros únicos y mucho más, creados especialmente para ti." data-en="Mugs, t-shirts, hoodies, unique keychains and much more, created especially for you.">Tazas, camisetas, sudaderas, llaveros únicos y mucho más, creados especialmente para ti.</p>
+                    <a href="tienda.html" class="hover:animate-jelly translate" data-es="Ver la tienda" data-en="Visit the shop">Ver la tienda</a>
                 </div>
             </div>
         </section>
 
         <section class="categorias-section">
-            <h2>¿Qué estás buscando?</h2>
+            <h2 class="translate" data-es="¿Qué estás buscando?" data-en="What are you looking for?">¿Qué estás buscando?</h2>
             <div class="grid-categorias">
                 
                 <a href="tienda.html#camisetas" class="card-categoria">
                     <img src="imagenes/productos/camisetaBasica.png" alt="Camiseta personalizada con diseño" />
-                    <h3>Camisetas</h3>
+                    <h3 class="translate" data-es="Camisetas" data-en="T-shirts">Camisetas</h3>
                 </a>
 
                 <a href="tienda.html#tazas" class="card-categoria">
                     <img src="imagenes/productos/tazaAngryBird.jpg" alt="Taza personalizada" />
-                    <h3>Tazas</h3>
+                    <h3 class="translate" data-es="Tazas" data-en="Mugs">Tazas</h3>
                 </a>
 
                 <a href="tienda.html#sudaderas" class="card-categoria">
                     <img src="imagenes/productos/sudaderaBasica.png" alt="Sudadera personalizada" />
-                    <h3>Sudaderas</h3>
+                    <h3 class="translate" data-es="Sudaderas" data-en="Hoodies">Sudaderas</h3>
                 </a>
 
                 <a href="tienda.html#llaveros" class="card-categoria">
                     <img src="imagenes/productos/LlaveroPersonalizado.png" alt="Llavero personalizado" />
-                    <h3>Llaveros</h3>
+                    <h3 class="translate" data-es="Llaveros" data-en="Keychains">Llaveros</h3>
                 </a>
             </div>
         </section>
 
         <section class="destacados-section">
-            <h2>Productos Destacados</h2>
+            <h2 class="translate" data-es="Productos Destacados" data-en="Featured Products">Productos Destacados</h2>
             <div class="grid-productos">
                 <div class="card-producto">
                     <img src="imagenes/productos/tazaBruja.jpeg" alt="Taza personalizada con foto" />
                     <div class="info-producto">
-                        <h4>Taza Personalizable</h4>
+                        <h4 class="translate" data-es="Taza Personalizable" data-en="Customizable Mug">Taza Personalizable</h4>
                         <p class="precio">12,99 €</p>
-                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-personalizadas-disenos-unicos-para-cada-ocasion" class="btn btn-secondary" target="_blank">Comprar</a>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/tazas-personalizadas-disenos-unicos-para-cada-ocasion" class="btn btn-secondary translate" data-es="Comprar" data-en="Buy now" target="_blank">Comprar</a>
                     </div>
                 </div>
                 <div class="card-producto">
                     <img src="imagenes/productos/sudaderaBasica.png" alt="Sudadera bordada" />
                     <div class="info-producto">
-                        <h4>Sudadera Personalizable</h4>
+                        <h4 class="translate" data-es="Sudadera Personalizable" data-en="Customizable Hoodie">Sudadera Personalizable</h4>
                         <p class="precio">29,99 €</p>
-                        <a href="https://jesica-medium-2.myshopify.com/products/sudadera-personalizada" class="btn btn-secondary" target="_blank">Comprar</a>
+                        <a href="https://jesica-medium-2.myshopify.com/products/sudadera-personalizada" class="btn btn-secondary translate" data-es="Comprar" data-en="Buy now" target="_blank">Comprar</a>
                     </div>
                 </div>
                 <div class="card-producto">
                     <img src="imagenes/productos/LlaveroPersonalizado.png" alt="Llavero de metacrilato" />
                     <div class="info-producto">
-                        <h4>Llavero Personalizable</h4>
+                        <h4 class="translate" data-es="Llavero Personalizable" data-en="Customizable Keychain">Llavero Personalizable</h4>
                         <p class="precio">8,50 €</p>
-                        <a href="https://jesica-medium-2.myshopify.com/en/products/llaveros-personalizados" class="btn btn-secondary" target="_blank">Comprar</a>
+                        <a href="https://jesica-medium-2.myshopify.com/en/products/llaveros-personalizados" class="btn btn-secondary translate" data-es="Comprar" data-en="Buy now" target="_blank">Comprar</a>
                     </div>
                 </div>
             </div>
@@ -112,9 +119,9 @@
         <div class="footer-content">
             <p>© 2026, <a href="index.html">Jessica Designs</a></p>
             <ul class="footer-menu">
-                <li><a href="politicaPrivacidad.html">Política de privacidad</a></li>
-                <li><a href="avisoLegal.html">Aviso legal</a></li>
-                <li><a href="politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="politicaPrivacidad.html" class="translate" data-es="Política de privacidad" data-en="Privacy Policy">Política de privacidad</a></li>
+                <li><a href="avisoLegal.html" class="translate" data-es="Aviso legal" data-en="Legal Notice">Aviso legal</a></li>
+                <li><a href="politicaCookies.html" class="translate" data-es="Política de Cookies" data-en="Cookies Policy">Política de Cookies</a></li>
             </ul>
         </div>
     </footer>

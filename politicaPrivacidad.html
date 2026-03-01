@@ -24,45 +24,59 @@
 
         <nav class="nav-menu" aria-label="Menú principal" id="nav-menu">
             <ul>
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                <li><a href="quien-soy.html" class="nav-link">Quién soy</a></li>
+                <li><a href="index.html" class="nav-link translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link translate" data-es="Tienda" data-en="Shop">Tienda</a></li>
+                <li><a href="quien-soy.html" class="nav-link translate" data-es="Quién soy" data-en="About me">Quién soy</a></li>
             </ul>
         </nav>
+        
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')" id="btn-es" style="font-weight: bold;">ES</button>
+            <span>|</span>
+            <button onclick="changeLanguage('en')" id="btn-en">EN</button>
+        </div>
     </header>
 
     <div class="container3">
-<h1>Política de Privacidad</h1>
+        <h1 class="translate" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</h1>
 
-    <p>En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (Reglamento General de Protección de Datos o RGPD), 
-        y de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), 
-        informamos a los usuarios que este sitio web no recoge datos personales de manera directa.</p>
+        <p class="translate" data-es="En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (Reglamento General de Protección de Datos o RGPD), y de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), informamos a los usuarios que este sitio web no recoge datos personales de manera directa." data-en="In compliance with Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation or GDPR), and Organic Law 3/2018, on the Protection of Personal Data and guarantee of digital rights (LOPDGDD), we inform users that this website does not collect personal data directly.">
+            En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (Reglamento General de Protección de Datos o RGPD), 
+            y de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), 
+            informamos a los usuarios que este sitio web no recoge datos personales de manera directa.
+        </p>
 
-    <h2>Responsable del tratamiento</h2>
+        <h2 class="translate" data-es="Responsable del tratamiento" data-en="Data Controller">Responsable del tratamiento</h2>
         <ul>
-            <li><strong>Nombre:</strong> Jessica Magaña Arcos</li>
-            <li><strong>Dirección:</strong> C/ Juan de la Encina, n8/ 1-3. Almería, España</li>
-            <li><strong>Email:</strong> Jmaganarcos@gmail.com</li>
+            <li class="translate" data-es="<strong>Nombre:</strong> Jessica Magaña Arcos" data-en="<strong>Name:</strong> Jessica Magaña Arcos"><strong>Nombre:</strong> Jessica Magaña Arcos</li>
+            <li class="translate" data-es="<strong>Dirección:</strong> C/ Juan de la Encina, n8/ 1-3. Almería, España" data-en="<strong>Address:</strong> C/ Juan de la Encina, n8/ 1-3. Almeria, Spain"><strong>Dirección:</strong> C/ Juan de la Encina, n8/ 1-3. Almería, España</li>
+            <li class="translate" data-es="<strong>Email:</strong> Jmaganarcos@gmail.com" data-en="<strong>Email:</strong> Jmaganarcos@gmail.com"><strong>Email:</strong> Jmaganarcos@gmail.com</li>
         </ul>
 
-    <h2>Finalidad del tratamiento</h2>
-        <p>Informar sobre los servicios ofrecidos así como sus precios.</p>
+        <h2 class="translate" data-es="Finalidad del tratamiento" data-en="Purpose of the processing">Finalidad del tratamiento</h2>
+        <p class="translate" data-es="Informar sobre los servicios ofrecidos así como sus precios." data-en="To inform about the services offered as well as their prices.">Informar sobre los servicios ofrecidos así como sus precios.</p>
 
-    <h2>Base legal</h2>
-        <p>La base legal para el tratamiento de los datos es el consentimiento del interesado al iniciar el contacto a través de WhatsApp.</p>
+        <h2 class="translate" data-es="Base legal" data-en="Legal Basis">Base legal</h2>
+        <p class="translate" data-es="La base legal para el tratamiento de los datos es el consentimiento del interesado al iniciar el contacto a través de WhatsApp." data-en="The legal basis for the processing of data is the consent of the interested party when initiating contact via WhatsApp.">La base legal para el tratamiento de los datos es el consentimiento del interesado al iniciar el contacto a través de WhatsApp.</p>
 
-    <h2>Destinatarios de los datos</h2>
-        <p>Los datos no serán cedidos a terceros, salvo obligación legal. No se almacenan en bases de datos externas. El intercambio de mensajes se realiza a través de WhatsApp, 
-            una plataforma externa propiedad de Meta Platforms, Inc., por lo que pueden producirse transferencias internacionales de datos.</p>
+        <h2 class="translate" data-es="Destinatarios de los datos" data-en="Recipients of the data">Destinatarios de los datos</h2>
+        <p class="translate" data-es="Los datos no serán cedidos a terceros, salvo obligación legal. No se almacenan en bases de datos externas. El intercambio de mensajes se realiza a través de WhatsApp, una plataforma externa propiedad de Meta Platforms, Inc., por lo que pueden producirse transferencias internacionales de datos." data-en="The data will not be transferred to third parties, except under legal obligation. They are not stored in external databases. The exchange of messages takes place via WhatsApp, an external platform owned by Meta Platforms, Inc., so international data transfers may occur.">
+            Los datos no serán cedidos a terceros, salvo obligación legal. No se almacenan en bases de datos externas. El intercambio de mensajes se realiza a través de WhatsApp, 
+            una plataforma externa propiedad de Meta Platforms, Inc., por lo que pueden producirse transferencias internacionales de datos.
+        </p>
 
-    <h2>Enlaces externos</h2>
-        <p>Este sitio web puede contener enlaces a sitios de terceros (por ejemplo, Instagram y Tiktok). 
+        <h2 class="translate" data-es="Enlaces externos" data-en="External links">Enlaces externos</h2>
+        <p class="translate" data-es="Este sitio web puede contener enlaces a sitios de terceros (por ejemplo, Instagram y Tiktok). No tenemos control sobre sus políticas de privacidad y no nos hacemos responsables del uso que dichos sitios hagan de los datos personales del usuario. Se recomienda revisar sus respectivas políticas." data-en="This website may contain links to third-party sites (for example, Instagram and TikTok). We have no control over their privacy policies and are not responsible for the use those sites make of the user's personal data. It is recommended to review their respective policies.">
+            Este sitio web puede contener enlaces a sitios de terceros (por ejemplo, Instagram y Tiktok). 
             No tenemos control sobre sus políticas de privacidad y no nos hacemos responsables del uso que dichos sitios hagan de los datos personales del usuario. 
-            Se recomienda revisar sus respectivas políticas.</p>
+            Se recomienda revisar sus respectivas políticas.
+        </p>
 
-    <h2>Modificaciones</h2>
-        <p>El responsable se reserva el derecho de modificar la presente política para adaptarla a novedades legislativas o jurisprudenciales.</p>
-</div>
+        <h2 class="translate" data-es="Modificaciones" data-en="Modifications">Modificaciones</h2>
+        <p class="translate" data-es="El responsable se reserva el derecho de modificar la presente política para adaptarla a novedades legislativas o jurisprudenciales." data-en="The data controller reserves the right to modify this policy to adapt it to new legislation or jurisprudence.">
+            El responsable se reserva el derecho de modificar la presente política para adaptarla a novedades legislativas o jurisprudenciales.
+        </p>
+    </div>
 
     <div class="social-icons">
         <a href="https://www.instagram.com/jesica.medium" target="_blank" aria-label="Instagram">
@@ -77,9 +91,9 @@
         <div class="footer-content">
             <p>© 2026, <a href="index.html">Jessica Designs</a></p>
             <ul class="footer-menu">
-                <li><a href="politicaPrivacidad.html">Política de privacidad</a></li>
-                <li><a href="avisoLegal.html">Aviso legal</a></li>
-                <li><a href="politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="politicaPrivacidad.html" class="translate" data-es="Política de privacidad" data-en="Privacy Policy">Política de privacidad</a></li>
+                <li><a href="avisoLegal.html" class="translate" data-es="Aviso legal" data-en="Legal Notice">Aviso legal</a></li>
+                <li><a href="politicaCookies.html" class="translate" data-es="Política de Cookies" data-en="Cookies Policy">Política de Cookies</a></li>
             </ul>
         </div>
     </footer>

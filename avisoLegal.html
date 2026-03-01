@@ -24,43 +24,61 @@
 
         <nav class="nav-menu" aria-label="Menú principal" id="nav-menu">
             <ul>
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                <li><a href="quien-soy.html" class="nav-link">Quién soy</a></li>
+                <li><a href="index.html" class="nav-link translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link translate" data-es="Tienda" data-en="Shop">Tienda</a></li>
+                <li><a href="quienSoy.html" class="nav-link translate" data-es="Quién soy" data-en="About me">Quién soy</a></li>
             </ul>
         </nav>
+        
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')" id="btn-es" style="font-weight: bold;">ES</button>
+            <span>|</span>
+            <button onclick="changeLanguage('en')" id="btn-en">EN</button>
+        </div>
     </header>
 
     <div class="container3">
-<h1>Aviso Legal</h1>
-<p>En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, 
-    de Servicios de la Sociedad de la Información y del Comercio Electrónico, se indican a continuación los datos identificativos del titular de este sitio web:</p>
+        <h1 class="translate" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</h1>
+        
+        <p class="translate" data-es="En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se indican a continuación los datos identificativos del titular de este sitio web:" data-en="In compliance with the duty of information contained in article 10 of Law 34/2002, of July 11, on Information Society Services and Electronic Commerce, the identifying data of the owner of this website are indicated below:">
+            En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se indican a continuación los datos identificativos del titular de este sitio web:
+        </p>
 
-<ul>
-    <li><strong>Titular:</strong> Jessica Magaña Arcos</li>
-    <li><strong>Dirección:</strong> C/ Juan de la Encina, n8/ 1-3. Almería, España</li>
-    <li><strong>Email:</strong> Jmaganarcos@gmail.com</li>
-</ul>
+        <ul>
+            <li class="translate" data-es="<strong>Titular:</strong> Jessica Magaña Arcos" data-en="<strong>Owner:</strong> Jessica Magaña Arcos"><strong>Titular:</strong> Jessica Magaña Arcos</li>
+            <li class="translate" data-es="<strong>Dirección:</strong> C/ Juan de la Encina, n8/ 1-3. Almería, España" data-en="<strong>Address:</strong> C/ Juan de la Encina, n8/ 1-3. Almeria, Spain"><strong>Dirección:</strong> C/ Juan de la Encina, n8/ 1-3. Almería, España</li>
+            <li class="translate" data-es="<strong>Email:</strong> Jmaganarcos@gmail.com" data-en="<strong>Email:</strong> Jmaganarcos@gmail.com"><strong>Email:</strong> Jmaganarcos@gmail.com</li>
+        </ul>
 
-<h2>Condiciones de uso</h2>
+        <h2 class="translate" data-es="Condiciones de uso" data-en="Terms of Use">Condiciones de uso</h2>
 
-<p>El usuario se compromete a hacer un uso adecuado de los contenidos y servicios que ofrece este sitio web, y a no emplearlos para incurrir en actividades ilícitas o contrarias a la buena fe y al orden público.</p>
+        <p class="translate" data-es="El usuario se compromete a hacer un uso adecuado de los contenidos y servicios que ofrece este sitio web, y a no emplearlos para incurrir en actividades ilícitas o contrarias a la buena fe y al orden público." data-en="The user agrees to make appropriate use of the content and services offered on this website, and not to use them to engage in illicit activities or activities contrary to good faith and public order.">
+            El usuario se compromete a hacer un uso adecuado de los contenidos y servicios que ofrece este sitio web, y a no emplearlos para incurrir en actividades ilícitas o contrarias a la buena fe y al orden público.
+        </p>
 
-<p>El titular se reserva el derecho a modificar cualquier tipo de información que pueda aparecer en la web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas obligaciones.</p>
+        <p class="translate" data-es="El titular se reserva el derecho a modificar cualquier tipo de información que pueda aparecer en la web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas obligaciones." data-en="The owner reserves the right to modify any type of information that may appear on the website, without any obligation to pre-notify or inform users of such obligations.">
+            El titular se reserva el derecho a modificar cualquier tipo de información que pueda aparecer en la web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas obligaciones.
+        </p>
 
-<h2>Propiedad intelectual</h2>
+        <h2 class="translate" data-es="Propiedad intelectual" data-en="Intellectual Property">Propiedad intelectual</h2>
 
-<p>Todos los contenidos de este sitio web (textos, imágenes, vídeos, diseño gráfico, código fuente, etc.) están protegidos por derechos de propiedad intelectual y son titularidad exclusiva de Juan Pérez García, salvo indicación expresa. Queda prohibida su reproducción total o parcial sin autorización expresa.</p>
+        <p class="translate" data-es="Todos los contenidos de este sitio web (textos, imágenes, vídeos, diseño gráfico, código fuente, etc.) están protegidos por derechos de propiedad intelectual y son titularidad exclusiva de Jessica Magaña Arcos, salvo indicación expresa. Queda prohibida su reproducción total o parcial sin autorización expresa." data-en="All contents of this website (texts, images, videos, graphic design, source code, etc.) are protected by intellectual property rights and are the exclusive property of Jessica Magaña Arcos, unless expressly stated otherwise. Their total or partial reproduction without express authorization is prohibited.">
+            Todos los contenidos de este sitio web (textos, imágenes, vídeos, diseño gráfico, código fuente, etc.) están protegidos por derechos de propiedad intelectual y son titularidad exclusiva de Jessica Magaña Arcos, salvo indicación expresa. Queda prohibida su reproducción total o parcial sin autorización expresa.
+        </p>
 
-<h2>Enlaces externos</h2>
+        <h2 class="translate" data-es="Enlaces externos" data-en="External links">Enlaces externos</h2>
 
-<p>En caso de que en este sitio web se dispongan enlaces a otros sitios de Internet, el titular no ejercerá ningún tipo de control sobre dichos sitios y contenidos, y no asumirá responsabilidad alguna por los contenidos enlazados.</p>
+        <p class="translate" data-es="En caso de que en este sitio web se dispongan enlaces a otros sitios de Internet, el titular no ejercerá ningún tipo de control sobre dichos sitios y contenidos, y no asumirá responsabilidad alguna por los contenidos enlazados." data-en="In the event that this website contains links to other Internet sites, the owner will not exercise any type of control over said sites and contents, and will not assume any responsibility for the linked contents.">
+            En caso de que en este sitio web se dispongan enlaces a otros sitios de Internet, el titular no ejercerá ningún tipo de control sobre dichos sitios y contenidos, y no asumirá responsabilidad alguna por los contenidos enlazados.
+        </p>
 
-<h2>Legislación y jurisdicción aplicable</h2>
+        <h2 class="translate" data-es="Legislación y jurisdicción aplicable" data-en="Applicable Law and Jurisdiction">Legislación y jurisdicción aplicable</h2>
 
-<p>La relación entre el usuario y el titular del sitio web se regirá por la normativa española vigente, y cualquier controversia se someterá a los Juzgados y Tribunales de Madrid, salvo que la ley disponga lo contrario.</p>
+        <p class="translate" data-es="La relación entre el usuario y el titular del sitio web se regirá por la normativa española vigente, y cualquier controversia se someterá a los Juzgados y Tribunales de Almería, salvo que la ley disponga lo contrario." data-en="The relationship between the user and the owner of the website will be governed by current Spanish regulations, and any controversy will be submitted to the Courts and Tribunals of Almeria, unless the law provides otherwise.">
+            La relación entre el usuario y el titular del sitio web se regirá por la normativa española vigente, y cualquier controversia se someterá a los Juzgados y Tribunales de Almería, salvo que la ley disponga lo contrario.
+        </p>
 
-</div>
+    </div>
 
     <div class="social-icons">
         <a href="https://www.instagram.com/jesica.medium" target="_blank" aria-label="Instagram">
@@ -75,9 +93,9 @@
         <div class="footer-content">
             <p>© 2026, <a href="index.html">Jessica Designs</a></p>
             <ul class="footer-menu">
-                <li><a href="politicaPrivacidad.html">Política de privacidad</a></li>
-                <li><a href="avisoLegal.html">Aviso legal</a></li>
-                <li><a href="politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="politicaPrivacidad.html" class="translate" data-es="Política de privacidad" data-en="Privacy Policy">Política de privacidad</a></li>
+                <li><a href="avisoLegal.html" class="translate" data-es="Aviso legal" data-en="Legal Notice">Aviso legal</a></li>
+                <li><a href="politicaCookies.html" class="translate" data-es="Política de Cookies" data-en="Cookies Policy">Política de Cookies</a></li>
             </ul>
         </div>
     </footer>

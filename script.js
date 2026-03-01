@@ -51,3 +51,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Cambia el idioma de la página 
+function changeLanguage(lang) {
+        // Cambia el texto
+        const elements = document.querySelectorAll('.translate');
+        elements.forEach(el => {
+            el.innerHTML = el.getAttribute(`data-${lang}`);
+        });
+
+        // Cambia el idioma en la etiqueta <html> por temas de SEO
+        document.documentElement.lang = lang;
+
+        // Pone en negrita el idioma seleccionado
+        document.getElementById('btn-es').style.fontWeight = lang === 'es' ? 'bold' : 'normal';
+        document.getElementById('btn-en').style.fontWeight = lang === 'en' ? 'bold' : 'normal';
+
+        // Guarda el idioma para que no se pierda al cambiar de página
+        localStorage.setItem('idioma', lang);
+}
+
+    // Ejecuta esto en cuanto carga la página
+window.addEventListener('DOMContentLoaded', () => {
+    const idiomaGuardado = localStorage.getItem('idioma') || 'es';
+    changeLanguage(idiomaGuardado);
+});

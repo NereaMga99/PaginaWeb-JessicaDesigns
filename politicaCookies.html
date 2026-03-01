@@ -24,38 +24,44 @@
 
         <nav class="nav-menu" aria-label="Menú principal" id="nav-menu">
             <ul>
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                <li><a href="quien-soy.html" class="nav-link">Quién soy</a></li>
+                <li><a href="index.html" class="nav-link translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link translate" data-es="Tienda" data-en="Shop">Tienda</a></li>
+                <li><a href="quien-soy.html" class="nav-link translate" data-es="Quién soy" data-en="About me">Quién soy</a></li>
             </ul>
         </nav>
+        
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')" id="btn-es" style="font-weight: bold;">ES</button>
+            <span>|</span>
+            <button onclick="changeLanguage('en')" id="btn-en">EN</button>
+        </div>
     </header>
 
 <div class="container3">
-    <h1>Politica de Cookies</h1>
+    <h1 class="translate" data-es="Política de Cookies" data-en="Cookies Policy">Política de Cookies</h1>
 
-    <h2>¿Qué cookies utiliza este sitio?</h2>
-    <h3>1. Cookies de análisis (Google Analytics)</h3>
-    <p>Nos permiten recopilar información anónima sobre el comportamiento de los visitantes. Esto nos ayuda a mejorar el contenido, diseño y rendimiento del sitio.</p>
-    <p>Ejemplo de datos recogidos: páginas visitadas, tiempo en el sitio, dispositivo, navegador, etc.
-    Estas cookies no permiten identificar al usuario.</p>
+    <h2 class="translate" data-es="¿Qué cookies utiliza este sitio?" data-en="What cookies does this site use?">¿Qué cookies utiliza este sitio?</h2>
+    
+    <h3 class="translate" data-es="1. Cookies de análisis (Google Analytics)" data-en="1. Analytics cookies (Google Analytics)">1. Cookies de análisis (Google Analytics)</h3>
+    <p class="translate" data-es="Nos permiten recopilar información anónima sobre el comportamiento de los visitantes. Esto nos ayuda a mejorar el contenido, diseño y rendimiento del sitio." data-en="They allow us to collect anonymous information about visitor behavior. This helps us improve the content, design, and performance of the site.">Nos permiten recopilar información anónima sobre el comportamiento de los visitantes. Esto nos ayuda a mejorar el contenido, diseño y rendimiento del sitio.</p>
+    <p class="translate" data-es="Ejemplo de datos recogidos: páginas visitadas, tiempo en el sitio, dispositivo, navegador, etc. Estas cookies no permiten identificar al usuario." data-en="Example of collected data: pages visited, time on site, device, browser, etc. These cookies do not allow the user to be identified.">Ejemplo de datos recogidos: páginas visitadas, tiempo en el sitio, dispositivo, navegador, etc. Estas cookies no permiten identificar al usuario.</p>
 
-    <h3>2. Cookies de terceros (redes sociales)</h3>
+    <h3 class="translate" data-es="2. Cookies de terceros (redes sociales)" data-en="2. Third-party cookies (social media)">2. Cookies de terceros (redes sociales)</h3>
 
-    <p>Este sitio incluye enlaces a redes sociales como Instagram, WhatsApp, y otros. Estas plataformas pueden instalar cookies propias al interactuar con sus botones o al ser redirigido a ellas.</p>
-    <p>Estas cookies están gestionadas directamente por las plataformas de redes sociales.</p>
+    <p class="translate" data-es="Este sitio incluye enlaces a redes sociales como Instagram, WhatsApp, y otros. Estas plataformas pueden instalar cookies propias al interactuar con sus botones o al ser redirigido a ellas." data-en="This site includes links to social networks like Instagram, WhatsApp, and others. These platforms may install their own cookies when interacting with their buttons or being redirected to them.">Este sitio incluye enlaces a redes sociales como Instagram, WhatsApp, y otros. Estas plataformas pueden instalar cookies propias al interactuar con sus botones o al ser redirigido a ellas.</p>
+    <p class="translate" data-es="Estas cookies están gestionadas directamente por las plataformas de redes sociales." data-en="These cookies are managed directly by the social media platforms.">Estas cookies están gestionadas directamente por las plataformas de redes sociales.</p>
 
-    <h2>¿Qué no hace este sitio?</h2>
+    <h2 class="translate" data-es="¿Qué no hace este sitio?" data-en="What does this site NOT do?">¿Qué no hace este sitio?</h2>
 
     <ul>
-        <li>No se recogen datos personales mediante formularios.</li>
-        <li>No se realizan pagos en línea.</li>
-        <li>No se usan cookies publicitarias.</li>
+        <li class="translate" data-es="No se recogen datos personales mediante formularios." data-en="Personal data is not collected through forms.">No se recogen datos personales mediante formularios.</li>
+        <li class="translate" data-es="No se realizan pagos en línea." data-en="No online payments are processed.">No se realizan pagos en línea.</li>
+        <li class="translate" data-es="No se usan cookies publicitarias." data-en="Advertising cookies are not used.">No se usan cookies publicitarias.</li>
     </ul>
 
-    <h2>¿Cómo desactivar o eliminar cookies?</h2>
+    <h2 class="translate" data-es="¿Cómo desactivar o eliminar cookies?" data-en="How to disable or delete cookies?">¿Cómo desactivar o eliminar cookies?</h2>
 
-    <p>Puedes desactivar o eliminar cookies desde la configuración de tu navegador.</p>
+    <p class="translate" data-es="Puedes desactivar o eliminar cookies desde la configuración de tu navegador." data-en="You can disable or delete cookies from your browser settings.">Puedes desactivar o eliminar cookies desde la configuración de tu navegador.</p>
 
 </div>
 
@@ -72,9 +78,9 @@
         <div class="footer-content">
             <p>© 2026, <a href="index.html">Jessica Designs</a></p>
             <ul class="footer-menu">
-                <li><a href="politicaPrivacidad.html">Política de privacidad</a></li>
-                <li><a href="avisoLegal.html">Aviso legal</a></li>
-                <li><a href="politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="politicaPrivacidad.html" class="translate" data-es="Política de privacidad" data-en="Privacy Policy">Política de privacidad</a></li>
+                <li><a href="avisoLegal.html" class="translate" data-es="Aviso legal" data-en="Legal Notice">Aviso legal</a></li>
+                <li><a href="politicaCookies.html" class="translate" data-es="Política de Cookies" data-en="Cookies Policy">Política de Cookies</a></li>
             </ul>
         </div>
     </footer>

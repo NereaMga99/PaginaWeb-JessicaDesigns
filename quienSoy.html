@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Jessica Designs | Productos Personalizados</title>
     <link rel="icon" href="favicon.ico" type="image/ico">
+</head>
 <body>
 
     <header>
@@ -23,11 +24,17 @@
 
         <nav class="nav-menu" aria-label="Menú principal" id="nav-menu">
             <ul>
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="tienda.html" class="nav-link">Tienda</a></li>
-                <li><a href="quienSoy.html" class="nav-link">Quién soy</a></li>
+                <li><a href="index.html" class="nav-link translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link translate" data-es="Tienda" data-en="Shop">Tienda</a></li>
+                <li><a href="quienSoy.html" class="nav-link translate" data-es="Quién soy" data-en="About me">Quién soy</a></li>
             </ul>
         </nav>
+
+        <div class="language-switcher">
+            <button onclick="changeLanguage('es')" id="btn-es" style="font-weight: bold;">ES</button>
+            <span>|</span>
+            <button onclick="changeLanguage('en')" id="btn-en">EN</button>
+        </div>
     </header>
 
     <main>
@@ -39,14 +46,23 @@
                 </div>
                 
                 <div class="quien-soy-texto">
-                    <h2>¡Hola! Soy Jessica</h2>
-                    <p>Soy una persona creativa y apasionada por ayudar a otros a expresar su esencia a través del diseño. Parte de mi camino está conectado con el mundo esotérico, donde acompaño 
-                        procesos personales desde la intuición, la energía y la creatividad.</p>
-                    <p>Además, me dedico a la sublimación y a la impresión DTF, creando productos personalizados como camisetas, tazas, llaveros, bolsas y mucho más. Cada diseño se adapta a tu estilo 
-                        y a lo que quieres transmitir: puedes traer tu idea y la desarrollamos juntos, o elegir entre las propuestas disponibles en mi catálogo.</p>
-                    <p>También acompaño a emprendedores que están comenzando o quieren dar un paso más en su marca, ofreciendo soluciones como tarjetas NFC y tarjetas de presentación que ayudan a mostrar 
-                        tu negocio de forma profesional, moderna y diferente.</p>
-                    <p>Mi objetivo es que cada producto cuente una historia, conecte con tu identidad y te ayude a destacar.</p>
+                    <h2 class="translate" data-es="¡Hola! Soy Jessica" data-en="Hi! I'm Jessica">¡Hola! Soy Jessica</h2>
+                    
+                    <p class="translate" data-es="Soy una persona creativa y apasionada por ayudar a otros a expresar su esencia a través del diseño. Parte de mi camino está conectado con el mundo esotérico, donde acompaño procesos personales desde la intuición, la energía y la creatividad." data-en="I am a creative person, passionate about helping others express their essence through design. Part of my journey is connected to the esoteric world, where I accompany personal processes through intuition, energy, and creativity.">
+                        Soy una persona creativa y apasionada por ayudar a otros a expresar su esencia a través del diseño. Parte de mi camino está conectado con el mundo esotérico, donde acompaño procesos personales desde la intuición, la energía y la creatividad.
+                    </p>
+                    
+                    <p class="translate" data-es="Además, me dedico a la sublimación y a la impresión DTF, creando productos personalizados como camisetas, tazas, llaveros, bolsas y mucho más. Cada diseño se adapta a tu estilo y a lo que quieres transmitir: puedes traer tu idea y la desarrollamos juntos, o elegir entre las propuestas disponibles en mi catálogo." data-en="In addition, I specialize in sublimation and DTF printing, creating custom products like t-shirts, mugs, keychains, bags, and much more. Each design adapts to your style and what you want to convey: you can bring your idea and we can develop it together, or you can choose from the proposals available in my catalog.">
+                        Además, me dedico a la sublimación y a la impresión DTF, creando productos personalizados como camisetas, tazas, llaveros, bolsas y mucho más. Cada diseño se adapta a tu estilo y a lo que quieres transmitir: puedes traer tu idea y la desarrollamos juntos, o elegir entre las propuestas disponibles en mi catálogo.
+                    </p>
+                    
+                    <p class="translate" data-es="También acompaño a emprendedores que están comenzando o quieren dar un paso más en su marca, ofreciendo soluciones como tarjetas NFC y tarjetas de presentación que ayudan a mostrar tu negocio de forma profesional, moderna y diferente." data-en="I also support entrepreneurs who are just starting out or want to take their brand a step further, offering solutions like NFC cards and business cards that help present your business in a professional, modern, and unique way.">
+                        También acompaño a emprendedores que están comenzando o quieren dar un paso más en su marca, ofreciendo soluciones como tarjetas NFC y tarjetas de presentación que ayudan a mostrar tu negocio de forma profesional, moderna y diferente.
+                    </p>
+                    
+                    <p class="translate" data-es="Mi objetivo es que cada producto cuente una historia, conecte con tu identidad y te ayude a destacar." data-en="My goal is for each product to tell a story, connect with your identity, and help you stand out.">
+                        Mi objetivo es que cada producto cuente una historia, conecte con tu identidad y te ayude a destacar.
+                    </p>
                 </div>
             </div>
         </section>
@@ -65,9 +81,9 @@
         <div class="footer-content">
             <p>© 2026, <a href="index.html">Jessica Designs</a></p>
             <ul class="footer-menu">
-                <li><a href="politicaPrivacidad.html">Política de privacidad</a></li>
-                <li><a href="avisoLegal.html">Aviso legal</a></li>
-                <li><a href="politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="politicaPrivacidad.html" class="translate" data-es="Política de privacidad" data-en="Privacy Policy">Política de privacidad</a></li>
+                <li><a href="avisoLegal.html" class="translate" data-es="Aviso legal" data-en="Legal Notice">Aviso legal</a></li>
+                <li><a href="politicaCookies.html" class="translate" data-es="Política de Cookies" data-en="Cookies Policy">Política de Cookies</a></li>
             </ul>
         </div>
     </footer>

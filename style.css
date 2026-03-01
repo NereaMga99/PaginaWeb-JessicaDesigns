@@ -93,6 +93,25 @@ header {
     width: 100%;
 }
 
+/* BOTON CAMBIO DE IDIOMA */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 15px;
+}
+.language-switcher button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; /* Cambia esto si tu menú tiene otro color */
+    padding: 0;
+}
+.language-switcher button:hover {
+    color: #ff66b2; /* Color al pasar el ratón */
+}
+
 /* CABECERA / HERO */
 .cabecera {
     position: relative;
