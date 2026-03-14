@@ -71,8 +71,18 @@ function changeLanguage(lang) {
         localStorage.setItem('idioma', lang);
 }
 
-    // Ejecuta esto en cuanto carga la página
+// Ejecuta esto en cuanto carga la página
 window.addEventListener('DOMContentLoaded', () => {
     const idiomaGuardado = localStorage.getItem('idioma') || 'es';
     changeLanguage(idiomaGuardado);
+});
+
+// Si la URL contiene ".co.uk", ponemos el idioma en inglés. Si no, lo dejamos en español
+document.addEventListener("DOMContentLoaded", function() {
+    // Miramos si la dirección web contiene ".co.uk"
+    if (window.location.hostname.includes(".co.uk")) {
+        changeLanguage('en'); // Ponemos la web en inglés
+    } else {
+        changeLanguage('es'); // Si no, la dejamos en español
+    }
 });
